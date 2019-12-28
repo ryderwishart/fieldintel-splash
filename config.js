@@ -14,16 +14,6 @@ module.exports = {
     "Unlimited information to save money, save time, and give you peace of mind in any agricultural pursuit.",
   socialLinks: [
     {
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/',
-    },
-    {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/',
-    },
-    {
       icon: 'fa-facebook',
       name: 'Facebook',
       url: 'https://facebook.com/',
