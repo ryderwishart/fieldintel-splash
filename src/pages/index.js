@@ -11,9 +11,9 @@ var settings = {
     { url: require('../assets/images/bg02.jpg'), position: 'center' },
     { url: require('../assets/images/bg06.jpg'), position: 'center' },
     { url: require('../assets/images/bg03.jpg'), position: 'center' },
-    { url: require('../assets/images/bg04.jpg'), position: 'center' },
-    { url: require('../assets/images/bg05.jpg'), position: 'center' },
-    { url: require('../assets/images/bg01.jpg'), position: 'center' },
+    //{ url: require('../assets/images/bg04.jpg'), position: 'center' },
+    //{ url: require('../assets/images/bg05.jpg'), position: 'center' },
+    //{ url: require('../assets/images/bg01.jpg'), position: 'center' },
   ],
   // Delay.
   delay: 6000,
@@ -29,3 +29,16 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
+
+`
+query {
+  file(relativePath: { eq: "images/default.jpg" }) {
+    childImageSharp {
+      # Specify a fluid image and fragment
+      # The default maxWidth is 800 pixels
+      fluid {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  }
+}`
